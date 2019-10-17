@@ -50,6 +50,72 @@
           <a class="nav-link" href="references.html">References</a>
         </li>
       </nav>
-    <h1>Tools Page</h1>
-  </body>
+      <main>
+
+    <h1>Tools</h1>
+    <br>
+    <h2>Search and optimization</h2>
+
+      <p>Many problems in AI can be solved in theory by intelligently searching through many possible solutions: Reasoning can be reduced to performing a search. For example, logical proof can be viewed as searching for a path that leads from premises to conclusions, where each step is the application of an inference rule. Planning algorithms search through trees of goals and subgoals, attempting to find a path to a target goal, a process called means-ends analysis. Robotics algorithms for moving limbs and grasping objects use local searches in configuration space. Many learning algorithms use search algorithms based on optimization.
+      </p>
+      <p>Simple exhaustive searches are rarely sufficient for most real-world problems: the search space (the number of places to search) quickly grows to astronomical numbers. The result is a search that is too slow or never completes. The solution, for many problems, is to use "heuristics" or "rules of thumb" that prioritize choices in favor of those that are more likely to reach a goal and to do so in a shorter number of steps. In some search methodologies heuristics can also serve to entirely eliminate some choices that are unlikely to lead to a goal (called "pruning the search tree"). Heuristics supply the program with a "best guess" for the path on which the solution lies. Heuristics limit the search for solutions into a smaller sample size.
+      </p>
+      <p>A very different kind of search came to prominence in the 1990s, based on the mathematical theory of optimization. For many problems, it is possible to begin the search with some form of a guess and then refine the guess incrementally until no more refinements can be made. These algorithms can be visualized as blind hill climbing: we begin the search at a random point on the landscape, and then, by jumps or steps, we keep moving our guess uphill, until we reach the top. Other optimization algorithms are simulated annealing, beam search and random optimization.
+      </p>
+
+      <br>
+
+      <h2>Logic</h2>
+      <p>Logic is used for knowledge representation and problem solving, but it can be applied to other problems as well. For example, the satplan algorithm uses logic for planning and inductive logic programming is a method for learning. </p>
+
+      <p>Several different forms of logic are used in AI research. Propositional logic involves truth functions such as "or" and "not". First-order logic adds quantifiers and predicates, and can express facts about objects, their properties, and their relations with each other. Fuzzy set theory assigns a "degree of truth" (between 0 and 1) to vague statements such as "Alice is old" (or rich, or tall, or hungry) that are too linguistically imprecise to be completely true or false. Fuzzy logic is successfully used in control systems to allow experts to contribute vague rules such as "if you are close to the destination station and moving fast, increase the train's brake pressure"; these vague rules can then be numerically refined within the system. Fuzzy logic fails to scale well in knowledge bases; many AI researchers question the validity of chaining fuzzy-logic inferences. </p>
+
+      <p>Default logics, non-monotonic logics and circumscription are forms of logic designed to help with default reasoning and the qualification problem. Several extensions of logic have been designed to handle specific domains of knowledge, such as: description logics; situation calculus, event calculus and fluent calculus (for representing events and time); causal calculus; belief calculus; and modal logics. </p>
+
+      <p>Overall, qualitative symbolic logic is brittle and scales poorly in the presence of noise or other uncertainty. Exceptions to rules are numerous, and it is difficult for logical systems to function in the presence of contradictory rules. </p>
+
+      <br>
+      <h2>Artificial neural networks </h2>
+
+      <p>A neural network is an interconnected group of nodes, akin to the vast network of neurons in the human brain. </p>
+
+      <p>Neural networks were inspired by the architecture of neurons in the human brain. A simple "neuron" N accepts input from multiple other neurons, each of which, when activated (or "fired"), cast a weighted "vote" for or against whether neuron N should itself activate. Learning requires an algorithm to adjust these weights based on the training data; one simple algorithm (dubbed "fire together, wire together") is to increase the weight between two connected neurons when the activation of one triggers the successful activation of another. The neural network forms "concepts" that are distributed among a subnetwork of shared neurons that tend to fire together; a concept meaning "leg" might be coupled with a subnetwork meaning "foot" that includes the sound for "foot". Neurons have a continuous spectrum of activation; in addition, neurons can process inputs in a nonlinear way rather than weighing straightforward votes. Modern neural networks can learn both continuous functions and, surprisingly, digital logical operations. Neural networks' early successes included predicting the stock market and (in 1995) a mostly self-driving car. In the 2010s, advances in neural networks using deep learning thrust AI into widespread public consciousness and contributed to an enormous upshift in corporate AI spending; for example, AI-related M&A in 2017 was over 25 times as large as in 2015.
+      </p>
+
+      <p>The study of non-learning artificial neural networks began in the decade before the field of AI research was founded, in the work of Walter Pitts and Warren McCullouch. Frank Rosenblatt invented the perceptron, a learning network with a single layer, similar to the old concept of linear regression. Early pioneers also include Alexey Grigorevich Ivakhnenko, Teuvo Kohonen, Stephen Grossberg, Kunihiko Fukushima, Christoph von der Malsburg, David Willshaw, Shun-Ichi Amari, Bernard Widrow, John Hopfield, Eduardo R. Caianiello, and others. </p>
+
+      <p>The main categories of networks are acyclic or feedforward neural networks (where the signal passes in only one direction) and recurrent neural networks (which allow feedback and short-term memories of previous input events). Among the most popular feedforward networks are perceptrons, multi-layer perceptrons and radial basis networks. Neural networks can be applied to the problem of intelligent control (for robotics) or learning, using such techniques as Hebbian learning ("fire together, wire together"), GMDH or competitive learning. </p>
+
+      <p>Today, neural networks are often trained by the backpropagation algorithm, which had been around since 1970 as the reverse mode of automatic differentiation published by Seppo Linnainmaa, and was introduced to neural networks by Paul Werbos.
+      </p>
+
+      <p>Hierarchical temporal memory is an approach that models some of the structural and algorithmic properties of the neocortex.
+      </p>
+
+      <p>To summarize, most neural networks use some form of gradient descent on a hand-created neural topology. However, some research groups, such as Uber, argue that simple neuroevolution to mutate new neural network topologies and weights may be competitive with sophisticated gradient descent approaches. One advantage of neuroevolution is that it may be less prone to get caught in "dead ends".</p>
+      <br>
+
+      <h2>Deep feedforward neural networks</h2>
+
+      <p>Deep learning is any artificial neural network that can learn a long chain of causal links.  For example, a feedforward network with six hidden layers can learn a seven-link causal chain (six hidden layers + output layer) and has a "credit assignment path" (CAP) depth of seven]. Many deep learning systems need to be able to learn chains ten or more causal links in length. Deep learning has transformed many important subfields of artificial intelligence, including computer vision, speech recognition, natural language processing and others. </p>
+
+      <p>According to one overview, the expression "Deep Learning" was introduced to the machine learning community by Rina Dechter in 1986 and gained traction after Igor Aizenberg and colleagues introduced it to artificial neural networks in 2000. The first functional Deep Learning networks were published by Alexey Grigorevich Ivakhnenko and V. G. Lapa in 1965. These networks are trained one layer at a time. Ivakhnenko's 1971 paper describes the learning of a deep feedforward multilayer perceptron with eight layers, already much deeper than many later networks. In 2006, a publication by Geoffrey Hinton and Ruslan Salakhutdinov introduced another way of pre-training many-layered feedforward neural networks (FNNs) one layer at a time, treating each layer in turn as an unsupervised restricted Boltzmann machine, then using supervised backpropagation for fine-tuning. Similar to shallow artificial neural networks, deep neural networks can model complex non-linear relationships. Over the last few years, advances in both machine learning algorithms and computer hardware have led to more efficient methods for training deep neural networks that contain many layers of non-linear hidden units and a very large output layer.
+      </p>
+
+      <p>Deep learning often uses convolutional neural networks (CNNs), whose origins can be traced back to the Neocognitron introduced by Kunihiko Fukushima in 1980.  In 1989, Yann LeCun and colleagues applied backpropagation to such an architecture. In the early 2000s, in an industrial application CNNs already processed an estimated 10% to 20% of all the checks written in the US. Since 2011, fast implementations of CNNs on GPUs have won many visual pattern recognition competitions.
+      </p>
+      <br>
+
+      <h2>Evaluating progress </h2>
+
+      <p>AI, like electricity or the steam engine, is a general purpose technology. There is no consensus on how to characterize which tasks AI tends to excel at. While projects such as AlphaZero have succeeded in generating their own knowledge from scratch, many other machine learning projects require large training datasets. Researcher Andrew Ng has suggested, as a "highly imperfect rule of thumb", that "almost anything a typical human can do with less than one second of mental thought, we can probably now or in the near future automate using AI." Moravec's paradox suggests that AI lags humans at many tasks that the human brain has specifically evolved to perform well. </p>
+
+      <p>Games provide a well-publicized benchmark for assessing rates of progress. AlphaGo around 2016 brought the era of classical board-game benchmarks to a close. Games of imperfect knowledge provide new challenges to AI in the area of game theory E-sports such as StarCraft continue to provide additional public benchmarks. There are many competitions and prizes, such as the Imagenet Challenge, to promote research in artificial intelligence. The most common areas of competition include general machine intelligence, conversational behavior, data-mining, robotic cars, and robot soccer as well as conventional games. </p>
+
+      <p>The "imitation game" (an interpretation of the 1950 Turing test that assesses whether a computer can imitate a human) is nowadays considered too exploitable to be a meaningful benchmark. A derivative of the Turing test is the Completely Automated Public Turing test to tell Computers and Humans Apart (CAPTCHA). As the name implies, this helps to determine that a user is an actual person and not a computer posing as a human. In contrast to the standard Turing test, CAPTCHA is administered by a machine and targeted to a human as opposed to being administered by a human and targeted to a machine. A computer asks a user to complete a simple test then generates a grade for that test. Computers are unable to solve the problem, so correct solutions are deemed to be the result of a person taking the test. A common type of CAPTCHA is the test that requires the typing of distorted letters, numbers or symbols that appear in an image undecipherable by a computer. </p>
+
+      <p>Proposed "universal intelligence" tests aim to compare how well machines, humans, and even non-human animals perform on problem sets that are generic as possible. At an extreme, the test suite can contain every possible problem, weighted by Kolmogorov complexity; unfortunately, these problem sets tend to be dominated by impoverished pattern-matching exercises where a tuned AI can easily exceed human performance levels. </p>
+</main>
+</body>
+
 </html>
